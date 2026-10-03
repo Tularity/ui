@@ -54,7 +54,13 @@ const sections = [
 
 const files = []
 for await (const file of walk(SRC)) files.push(file)
-files.sort()
+// Sorted by the import specifier rather than the native path: Windows' `\`
+// sorts after letters where `/` sorts before them, and the generated file
+// must not depend on the platform that wrote it.
+files.sort((a, b) => {
+  const [x, y] = [posix(a), posix(b)]
+  return x < y ? -1 : x > y ? 1 : 0
+})
 
 const duplicates = new Map()
 let out = `/* ---------------------------------------------------------------------------
