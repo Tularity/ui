@@ -71,7 +71,7 @@ export const Tag = forwardRef<HTMLSpanElement, TagProps>(function Tag(
 
   if (import.meta.env?.DEV && onRemove && !removeLabel && !text) {
     console.error(
-      '[@tularity/ui] <Tag onRemove> could not derive its remove button name. ' +
+      '[@tular/ui] <Tag onRemove> could not derive its remove button name. ' +
         'Pass `value` with the tag text (or `removeLabel` with the full name) ' +
         'whenever `children` is not a plain string.',
     )

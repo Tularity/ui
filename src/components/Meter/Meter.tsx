@@ -72,7 +72,7 @@ export const Meter = forwardRef<HTMLDivElement, MeterProps>(function Meter(
     !rest['aria-labelledby']
   ) {
     console.error(
-      '[@tularity/ui] <Meter> needs `label` or `aria-labelledby`. ' +
+      '[@tular/ui] <Meter> needs `label` or `aria-labelledby`. ' +
         'A bare number with no name attached is not a measurement of anything.',
     )
   }

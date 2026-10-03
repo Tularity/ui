@@ -62,7 +62,7 @@ export const Badge = forwardRef<HTMLSpanElement, BadgeProps>(function Badge(
     !rest['aria-labelledby']
   ) {
     console.error(
-      '[@tularity/ui] <Badge> needs children, or `aria-label` when the text is ' +
+      '[@tular/ui] <Badge> needs children, or `aria-label` when the text is ' +
         'somewhere else. The dot and the icon are both `aria-hidden`, so a badge ' +
         'with neither leaves the state carried by hue alone.',
     )

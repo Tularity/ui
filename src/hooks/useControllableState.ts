@@ -41,7 +41,7 @@ export function useControllableState<T>({
     if (!import.meta.env?.DEV) return
     if (wasControlled.current === isControlled) return
     console.error(
-      `[@tularity/ui] A component switched from ${
+      `[@tular/ui] A component switched from ${
         wasControlled.current ? 'controlled to uncontrolled' : 'uncontrolled to controlled'
       }. Decide on one mode for the lifetime of the component; passing \`undefined\` ` +
         'to a controlled prop is the usual cause.',

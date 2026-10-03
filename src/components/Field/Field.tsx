@@ -158,7 +158,7 @@ export const Field = forwardRef<HTMLDivElement, FieldProps>(function Field(
 ) {
   if (import.meta.env?.DEV && required && optional) {
     console.error(
-      '[@tularity/ui] <Field> was given both `required` and `optional`. ' +
+      '[@tular/ui] <Field> was given both `required` and `optional`. ' +
         'Pick one — the two markers contradict each other.',
     )
   }

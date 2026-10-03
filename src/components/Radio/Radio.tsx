@@ -148,7 +148,7 @@ export const RadioGroup = forwardRef<HTMLDivElement, RadioGroupProps>(function R
     !rest['aria-labelledby']
   ) {
     console.error(
-      '[@tularity/ui] <RadioGroup> has no accessible name. Pass `label`, ' +
+      '[@tular/ui] <RadioGroup> has no accessible name. Pass `label`, ' +
         '`aria-label` or `aria-labelledby`. A surrounding <Field> label is not ' +
         'enough on its own — `<label for>` does not name a radiogroup.',
     )
@@ -250,11 +250,11 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>(function Radio(
 
   if (import.meta.env?.DEV) {
     if (label == null && !rest['aria-label'] && !rest['aria-labelledby']) {
-      console.error('[@tularity/ui] <Radio> needs `label`, `aria-label` or `aria-labelledby`.')
+      console.error('[@tular/ui] <Radio> needs `label`, `aria-label` or `aria-labelledby`.')
     }
     if (group && defaultChecked !== undefined) {
       console.error(
-        '[@tularity/ui] <Radio defaultChecked> is ignored inside a <RadioGroup>. ' +
+        '[@tular/ui] <Radio defaultChecked> is ignored inside a <RadioGroup>. ' +
           'Set the group\'s `defaultValue` instead — the group owns the selection.',
       )
     }

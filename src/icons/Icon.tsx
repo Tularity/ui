@@ -174,7 +174,7 @@ export const Icon = forwardRef<SVGSVGElement, IconProps>(function Icon(
   const d = PATHS[name]
 
   if (import.meta.env?.DEV && !d) {
-    console.error(`[@tularity/ui] Unknown icon "${name}".`)
+    console.error(`[@tular/ui] Unknown icon "${name}".`)
   }
 
   return (

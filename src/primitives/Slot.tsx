@@ -95,7 +95,7 @@ export const Slot = forwardRef<HTMLElement, SlotProps>(function Slot(
     const target = slottable.props.children
     if (!isValidElement(target)) {
       if (import.meta.env?.DEV) {
-        console.error('[@tularity/ui] `<Slottable>` expects a single React element child.')
+        console.error('[@tular/ui] `<Slottable>` expects a single React element child.')
       }
       return null
     }
@@ -109,7 +109,7 @@ export const Slot = forwardRef<HTMLElement, SlotProps>(function Slot(
   if (!resolved) {
     if (import.meta.env?.DEV && Children.count(children) > 1) {
       console.error(
-        '[@tularity/ui] `asChild` expects exactly one React element child, or several ' +
+        '[@tular/ui] `asChild` expects exactly one React element child, or several ' +
           `with the consumer's element wrapped in <Slottable>. Received ${Children.count(children)}.`,
       )
     }

@@ -71,7 +71,7 @@ const MenuContext = createContext<MenuContextValue | null>(null)
 function useMenuContext(component: string): MenuContextValue {
   const context = useContext(MenuContext)
   if (!context) {
-    throw new Error(`[@tularity/ui] <${component}> must be rendered inside a <Menu>.`)
+    throw new Error(`[@tular/ui] <${component}> must be rendered inside a <Menu>.`)
   }
   return context
 }
@@ -334,7 +334,7 @@ export const Menu = forwardRef<HTMLDivElement, MenuProps>(function Menu(
   const contextValue = useMemo<MenuContextValue>(() => ({ close: () => close(true) }), [close])
 
   if (import.meta.env?.DEV && !isValidElement(trigger)) {
-    console.error('[@tularity/ui] <Menu trigger> must be a single React element.')
+    console.error('[@tular/ui] <Menu trigger> must be a single React element.')
   }
 
   let triggerNode: ReactNode = trigger
@@ -589,7 +589,7 @@ export const MenuRadioItem = forwardRef<HTMLDivElement, MenuRadioItemProps>(
   function MenuRadioItem({ value, closeOnSelect = true, onSelect, ...rest }, ref) {
     const group = useContext(MenuRadioContext)
     if (!group) {
-      throw new Error('[@tularity/ui] <MenuRadioItem> must be inside a <MenuRadioGroup>.')
+      throw new Error('[@tular/ui] <MenuRadioItem> must be inside a <MenuRadioGroup>.')
     }
     return (
       <MenuRow

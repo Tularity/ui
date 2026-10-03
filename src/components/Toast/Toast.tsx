@@ -171,7 +171,7 @@ export function ToastProvider({
     (options: ToastOptions) => {
       if (import.meta.env?.DEV && options.title == null && options.description == null) {
         console.error(
-          '[@tularity/ui] toast.push() needs a `title` or a `description`. ' +
+          '[@tular/ui] toast.push() needs a `title` or a `description`. ' +
             'A toast with neither announces nothing and renders as an empty card.',
         )
       }
@@ -260,7 +260,7 @@ export function ToastProvider({
 export function useToast(): ToastContextValue {
   const context = useContext(ToastContext)
   if (!context) {
-    throw new Error('[@tularity/ui] useToast() must be called inside a <ToastProvider>.')
+    throw new Error('[@tular/ui] useToast() must be called inside a <ToastProvider>.')
   }
   return context
 }

@@ -93,7 +93,7 @@ export const Steps = forwardRef<HTMLOListElement, StepsProps>(function Steps(
 ) {
   if (import.meta.env?.DEV && !rest['aria-label'] && !rest['aria-labelledby']) {
     console.error(
-      '[@tularity/ui] <Steps> needs `aria-label` or `aria-labelledby` — for example ' +
+      '[@tular/ui] <Steps> needs `aria-label` or `aria-labelledby` — for example ' +
         '"Passkey registration progress". Without it the list announces as three ' +
         'unrelated items.',
     )

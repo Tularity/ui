@@ -94,7 +94,7 @@ export const CodeInput = forwardRef<HTMLInputElement, CodeInputProps>(function C
   const [focused, setFocused] = useState(false)
 
   if (import.meta.env?.DEV && !field && !rest['aria-label'] && !rest['aria-labelledby'] && !idProp) {
-    console.error('[@tularity/ui] <CodeInput> has no accessible name. Wrap it in <Field label=…> or pass `aria-label`.')
+    console.error('[@tular/ui] <CodeInput> has no accessible name. Wrap it in <Field label=…> or pass `aria-label`.')
   }
 
   const clean = (text: string) =>

@@ -286,7 +286,7 @@ export const Dialog = forwardRef<HTMLDivElement, DialogProps>(function Dialog(
     // runs, but the state that records it has not been applied yet.
     if (panel.node.querySelector(`#${CSS.escape(surface.titleId)}`)) return
     console.error(
-      '[@tularity/ui] <Dialog> has no accessible name. Render a <DialogTitle> ' +
+      '[@tular/ui] <Dialog> has no accessible name. Render a <DialogTitle> ' +
         'inside it, or pass `aria-label`. A dialog announced only as "dialog" ' +
         'gives no indication of what it interrupted the page for.',
     )

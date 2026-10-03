@@ -128,7 +128,7 @@ export const Toolbar = forwardRef<HTMLDivElement, ToolbarProps>(function Toolbar
 
   if (import.meta.env?.DEV && !rest['aria-label'] && !rest['aria-labelledby']) {
     console.error(
-      '[@tularity/ui] <Toolbar> needs `aria-label` or `aria-labelledby`. A toolbar takes its name ' +
+      '[@tular/ui] <Toolbar> needs `aria-label` or `aria-labelledby`. A toolbar takes its name ' +
         'from the author, and an unnamed one is announced only as "toolbar" with no indication of ' +
         'what it controls.',
     )

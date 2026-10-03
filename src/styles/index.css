@@ -1,4 +1,4 @@
-/* @tularity/ui — stylesheet entry.
+/* @tular/ui — stylesheet entry.
  * Order matters: layers.css must come first so the layer order is pinned before
  * any rule is parsed. */
 @import './layers.css';

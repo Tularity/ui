@@ -68,7 +68,7 @@ export const Progress = forwardRef<HTMLDivElement, ProgressProps>(function Progr
     !rest['aria-labelledby']
   ) {
     console.error(
-      '[@tularity/ui] <Progress> needs `label` or `aria-labelledby`. ' +
+      '[@tular/ui] <Progress> needs `label` or `aria-labelledby`. ' +
         'An unnamed progressbar announces a percentage with nothing attached to it.',
     )
   }

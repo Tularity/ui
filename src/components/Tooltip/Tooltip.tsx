@@ -248,7 +248,7 @@ export const Tooltip = forwardRef<HTMLDivElement, TooltipProps>(function Tooltip
     if (!import.meta.env?.DEV || !tip.node) return
     if (!tip.node.querySelector(INTERACTIVE)) return
     console.error(
-      '[@tularity/ui] <Tooltip content> contains a focusable element. A tooltip ' +
+      '[@tular/ui] <Tooltip content> contains a focusable element. A tooltip ' +
         'is not in the tab order and is flattened to a string by ' +
         'aria-describedby, so that control can never be reached. Use a Popover.',
     )
@@ -288,7 +288,7 @@ export const Tooltip = forwardRef<HTMLDivElement, TooltipProps>(function Tooltip
   }
 
   if (import.meta.env?.DEV && !isValidElement(children)) {
-    console.error('[@tularity/ui] <Tooltip> expects a single React element child.')
+    console.error('[@tular/ui] <Tooltip> expects a single React element child.')
   }
 
   // The child is cloned before it reaches Slot so that an `aria-describedby`

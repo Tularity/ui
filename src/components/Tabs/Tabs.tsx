@@ -47,7 +47,7 @@ function useTabsContext(component: string): TabsContextValue {
     // Thrown rather than reported in development only. Every piece of the ARIA
     // wiring — the ids, the selected state, the panel association — comes from
     // this context, so a subcomponent without it is not degraded, it is broken.
-    throw new Error(`[@tularity/ui] <${component}> must be rendered inside <Tabs>.`)
+    throw new Error(`[@tular/ui] <${component}> must be rendered inside <Tabs>.`)
   }
   return context
 }

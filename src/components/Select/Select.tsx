@@ -154,7 +154,7 @@ export const Select = forwardRef<HTMLButtonElement, SelectProps>(function Select
     !rest['aria-labelledby']
   ) {
     console.error(
-      '[@tularity/ui] <Select> has no way to be labelled. Wrap it in a <Field>, ' +
+      '[@tular/ui] <Select> has no way to be labelled. Wrap it in a <Field>, ' +
         'give it an `id` that a <label for> points at, or pass `aria-label`.',
     )
   }

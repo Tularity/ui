@@ -36,7 +36,7 @@ export function useOverlaySurface(component: string): OverlaySurface {
   const surface = useContext(OverlaySurfaceContext)
   if (!surface) {
     throw new Error(
-      `[@tularity/ui] <${component}> must be rendered inside the overlay it belongs to.`,
+      `[@tular/ui] <${component}> must be rendered inside the overlay it belongs to.`,
     )
   }
   return surface

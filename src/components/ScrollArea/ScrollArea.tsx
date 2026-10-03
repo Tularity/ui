@@ -105,7 +105,7 @@ export const ScrollArea = forwardRef<HTMLDivElement, ScrollAreaProps>(function S
 
   if (import.meta.env?.DEV && focusable && !ariaLabel && !ariaLabelledBy) {
     console.error(
-      '[@tularity/ui] <ScrollArea> is a tab stop and needs `aria-label` or `aria-labelledby`, ' +
+      '[@tular/ui] <ScrollArea> is a tab stop and needs `aria-label` or `aria-labelledby`, ' +
         'or `focusable={false}` if its content is already reachable from the keyboard.',
     )
   }

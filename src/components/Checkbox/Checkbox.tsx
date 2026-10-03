@@ -104,7 +104,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(function Che
     !rest['aria-labelledby']
   ) {
     console.error(
-      '[@tularity/ui] <Checkbox> needs `label`, `aria-label` or `aria-labelledby`.',
+      '[@tular/ui] <Checkbox> needs `label`, `aria-label` or `aria-labelledby`.',
     )
   }
 

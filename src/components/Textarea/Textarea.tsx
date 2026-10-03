@@ -105,7 +105,7 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(function 
     !idProp
   ) {
     console.error(
-      '[@tularity/ui] <Textarea> has no accessible name. Wrap it in <Field label=…>, ' +
+      '[@tular/ui] <Textarea> has no accessible name. Wrap it in <Field label=…>, ' +
         'pass `aria-label`/`aria-labelledby`, or give it an `id` that your own ' +
         '<label for> points at. A `placeholder` is not a label.',
     )

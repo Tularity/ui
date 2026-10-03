@@ -87,7 +87,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(function Card(
     !rest['aria-labelledby']
   ) {
     console.error(
-      `[@tularity/ui] <Card role="${resolvedRole}"> needs \`aria-label\` or \`aria-labelledby\`. ` +
+      `[@tular/ui] <Card role="${resolvedRole}"> needs \`aria-label\` or \`aria-labelledby\`. ` +
         'That role takes its name from the author, not from its contents, and without one it is ' +
         'exposed as an anonymous container.',
     )

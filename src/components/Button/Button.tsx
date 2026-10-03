@@ -83,7 +83,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
     !rest['aria-labelledby']
   ) {
     console.error(
-      '[@tularity/ui] <Button iconOnly> needs `aria-label` or `aria-labelledby`. ' +
+      '[@tular/ui] <Button iconOnly> needs `aria-label` or `aria-labelledby`. ' +
         'A `title` attribute is not a reliable substitute.',
     )
   }

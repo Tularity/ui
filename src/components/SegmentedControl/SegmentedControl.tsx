@@ -100,7 +100,7 @@ export const SegmentedControl = forwardRef<HTMLDivElement, SegmentedControlProps
       !rest['aria-labelledby']
     ) {
       console.error(
-        '[@tularity/ui] <SegmentedControl> is a radiogroup and needs `aria-label` or ' +
+        '[@tular/ui] <SegmentedControl> is a radiogroup and needs `aria-label` or ' +
           '`aria-labelledby`. Without one, the group announces as a bare set of radios ' +
           'with nothing to say what is being chosen.',
       )

@@ -41,7 +41,7 @@ export async function copyTextToClipboard(text: string): Promise<void> {
   }
 
   if (!copyBySelection(text)) {
-    throw new Error('[@tularity/ui] The browser refused to write to the clipboard.')
+    throw new Error('[@tular/ui] The browser refused to write to the clipboard.')
   }
 }
 
@@ -165,12 +165,12 @@ export const CopyButton = forwardRef<HTMLButtonElement, CopyButtonProps>(functio
   if (import.meta.env?.DEV) {
     if (iconOnly && !icon) {
       console.error(
-        '[@tularity/ui] <CopyButton iconOnly> renders no visible label, so it needs an `icon`.',
+        '[@tular/ui] <CopyButton iconOnly> renders no visible label, so it needs an `icon`.',
       )
     }
     if (iconOnly && icon && !copiedIcon) {
       console.error(
-        '[@tularity/ui] <CopyButton iconOnly> without a `copiedIcon` confirms the copy with a ' +
+        '[@tular/ui] <CopyButton iconOnly> without a `copiedIcon` confirms the copy with a ' +
           'colour change and nothing else — the glyph and the label both stay put, which fails ' +
           'WCAG 1.4.1. Pass a `copiedIcon`, or drop `iconOnly` so the label can change.',
       )

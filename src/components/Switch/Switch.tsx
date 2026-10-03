@@ -101,7 +101,7 @@ export const Switch = forwardRef<HTMLButtonElement, SwitchProps>(function Switch
     !ariaLabelledby
   ) {
     console.error(
-      '[@tularity/ui] <Switch> without a `label` needs `aria-label` or `aria-labelledby`. ' +
+      '[@tular/ui] <Switch> without a `label` needs `aria-label` or `aria-labelledby`. ' +
         'A switch with no name announces only as "on" or "off".',
     )
   }

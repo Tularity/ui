@@ -293,7 +293,7 @@ export const TableHeaderCell = forwardRef<HTMLTableCellElement, TableHeaderCellP
 
     if (import.meta.env?.DEV && sortable && !onSort) {
       console.error(
-        '[@tularity/ui] <TableHeaderCell sortable> renders a button and needs `onSort`. ' +
+        '[@tular/ui] <TableHeaderCell sortable> renders a button and needs `onSort`. ' +
           'Without it the column announces itself as sortable and then does nothing.',
       )
     }

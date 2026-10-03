@@ -59,7 +59,7 @@ export const Fieldset = forwardRef<HTMLFieldSetElement, FieldsetProps>(function 
 ) {
   if (import.meta.env?.DEV && required && optional) {
     console.error(
-      '[@tularity/ui] <Fieldset> was given both `required` and `optional`. ' +
+      '[@tular/ui] <Fieldset> was given both `required` and `optional`. ' +
         'Pick one — the two markers contradict each other.',
     )
   }

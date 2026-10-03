@@ -180,7 +180,7 @@ export const Drawer = forwardRef<HTMLDivElement, DrawerProps>(function Drawer(
     // is already in the document by then, which is why the DOM gets the say.
     if (panel.node.querySelector(`#${CSS.escape(surface.titleId)}`)) return
     console.error(
-      '[@tularity/ui] <Drawer> has no accessible name. Render a <DrawerTitle> ' +
+      '[@tular/ui] <Drawer> has no accessible name. Render a <DrawerTitle> ' +
         'inside it, or pass `aria-label`.',
     )
   }, [open, panel.node, surface.hasTitle, surface.titleId, labelledExternally])

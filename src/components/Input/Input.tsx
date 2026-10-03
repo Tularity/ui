@@ -127,7 +127,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
     !idProp
   ) {
     console.error(
-      '[@tularity/ui] <Input> has no accessible name. Wrap it in <Field label=…>, ' +
+      '[@tular/ui] <Input> has no accessible name. Wrap it in <Field label=…>, ' +
         'pass `aria-label`/`aria-labelledby`, or give it an `id` that your own ' +
         '<label for> points at. A `placeholder` is not a label.',
     )

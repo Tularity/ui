@@ -135,14 +135,14 @@ export const Popover = forwardRef<HTMLDivElement, PopoverProps>(function Popover
     if (!import.meta.env?.DEV || !active) return
     if (labelled) return
     console.error(
-      '[@tularity/ui] <Popover> renders role="dialog" and needs `aria-label` or ' +
+      '[@tular/ui] <Popover> renders role="dialog" and needs `aria-label` or ' +
         '`aria-labelledby`. Without one it is announced as an unnamed dialog, ' +
         'which tells the user focus moved but not where to.',
     )
   }, [active, labelled])
 
   if (import.meta.env?.DEV && !isValidElement(trigger)) {
-    console.error('[@tularity/ui] <Popover trigger> must be a single React element.')
+    console.error('[@tular/ui] <Popover trigger> must be a single React element.')
   }
 
   return (
